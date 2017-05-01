@@ -1,0 +1,106 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+body {
+    font-family: 'Inconsolata', monospace;
+}
+nav {
+    background-color: #000000;
+    height: 55px;
+    width: 100%;
+}
+.menu {
+    line-height: 55px;
+}
+.menu li {
+    display: inline;
+}
+.menu li a {
+    color: #fff;
+    margin-right: 30px;
+    font-size: 20px;
+    text-transform: lowercase;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    border-color: transparent;
+}
+.menu li a:hover {
+    color: #fff;
+    cursor: pointer;
+    border-color: yellow;
+    text-decoration: none;
+}
+.contentarea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    clear: both;
+}
+.contentarea fieldset legend {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: #bbb;
+}
+.bluenav {
+	background: -webkit-linear-gradient(#0098ff,#006db7);
+	background: -moz-linear-gradient(#0098ff,#006db7);
+	background: linear-gradient(#0098ff,#006db7);
+}
+.rednav {
+	background: -webkit-linear-gradient(#ff2c00,#b73300);
+	background: -moz-linear-gradient(#ff2c00,#b73300);
+	background: linear-gradient(#ff2c00,#b73300);
+}
+.carousel-inner .item img {
+	width: 100%;
+	height: 500px;
+}
+.homepagecont {
+	margin-top: 100px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+	min-height: 200px;
+	width: 100%;
+}
+.mainhome {
+	background: url('../../images/Backround.jpg') no-repeat;
+    background-size: 100%;
+    min-height: 600px;
+    background-position: contain;
+}
+.logindiv {
+	width: 100%;
+	min-height: 200px;
+	background: rgba(255,255,255,0.5);
+	margin-top: 100px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ededed;
+}
+.contentarea fieldset p {
+	font-size: 20px;
+	text-align: justify;
+	line-height: 30px;
+	font-family: 'Arial';
+}
+.contentarea h3 {
+	color: #FF0066;
+}
+.logindiv td input[type=radio] {
+	margin-right: 3px !important;
+}
+.logindiv td label {
+	margin-right: 10px !important;
+}
+.logindiv table {
+    width: 100%;
+    margin: 0 auto;
+}
+.headhome {
+    padding: 30px;
+}
+.headhome a {
+    font-size: 30px;
+}
+.notoppadding {
+    margin-top: 0px;

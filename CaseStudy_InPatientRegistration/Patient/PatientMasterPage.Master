@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PatientMasterPage.master.cs" Inherits="CaseStudy_InPatientRegistration.PatientMasterPage" %>
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 96%;
+        }
+
+        .auto-style5 {
+            width: 56px;
+            background-color: #FFFFFF;
+        }
+        body
+        {
+            background-image:url('../images/Pimage.jpg');
+            background-size: 100% 100%;
+            width:100%;
+            height:100%;
+        }
+        
+        .auto-style6 {
+            width: 315px;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="../images/Hospitals_Logo.png" style="position:absolute; top: 1px; left: 12px; height: 100px; width: 131px;"/>
+    &nbsp;<h1 align="center" style="font-family: 'Monotype Corsiva'; font-weight: bold; font-style: italic; color: #000000; width: 752px;">
+    WECOME TO APOLLO HOSPITAL</h1>
+     
+    <form id="form1" runat="server">
+    <table class="auto-style1" cellspacing="15" cellpadding="15" border="0">
+        
+       
+        <tr>
+            <td class="auto-style5">
+                <asp:LinkButton Text="Home" ID="lnkbtnHome" runat="server" OnClick="lnkbtnHome_Click" />
+                </td>
+                
+                <td style="color: #FFFFFF">
+
+                <asp:LinkButton Text="View Profile" ID="LinkButton1" runat="server" OnClick="lnkbtnViewProfile_Click" />
+                    </td>
+            <td class="auto-style6">
+                <asp:LinkButton Text="Change Password" ID="lnkbtnChangePassword" runat="server" OnClick="lnkbtnChangePassword_Click" />
+            </td>
+            <td>
+                <asp:LinkButton Text="Logout" ID="lnkbtnLogout" runat="server" OnClick="lnkbtnLogout_Click" />
+
+            </td>
+            </tr>
+        
+            
+           
+       <tr>
+           
+       
+           <td colspan="3" >
+                    <asp:ContentPlaceHolder ID="cph_PatientMasterPage" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+                </td>
+            </tr>
+      
+            </table>
+    
+    <div style="height: 216px">
+        
+    </div>
+    </form>
+</body>
+</html>

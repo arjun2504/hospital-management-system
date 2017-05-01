@@ -1,0 +1,5 @@
+C:\Users\MSLCELTP1045\Downloads\Inpatient\CaseStudy1\CaseStudy_InPatientRegistration\CaseStudy_InPatientRegistration\bin\Pat_RegDAL\bin\Debug\Pat_RegDAL.dll
+C:\Users\MSLCELTP1045\Downloads\Inpatient\CaseStudy1\CaseStudy_InPatientRegistration\CaseStudy_InPatientRegistration\bin\Pat_RegDAL\bin\Debug\Pat_RegDAL.pdb
+C:\Users\MSLCELTP1045\Downloads\Inpatient\CaseStudy1\CaseStudy_InPatientRegistration\CaseStudy_InPatientRegistration\bin\Pat_RegDAL\obj\Debug\Pat_RegDAL.csprojResolveAssemblyReference.cache
+C:\Users\MSLCELTP1045\Downloads\Inpatient\CaseStudy1\CaseStudy_InPatientRegistration\CaseStudy_InPatientRegistration\bin\Pat_RegDAL\obj\Debug\Pat_RegDAL.dll
+C:\Users\MSLCELTP1045\Downloads\Inpatient\CaseStudy1\CaseStudy_InPatientRegistration\CaseStudy_InPatientRegistration\bin\Pat_RegDAL\obj\Debug\Pat_RegDAL.pdb

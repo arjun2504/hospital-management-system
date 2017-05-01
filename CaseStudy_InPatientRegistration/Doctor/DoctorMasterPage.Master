@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DoctorMasterPage.master.cs" Inherits="CaseStudy_InPatientRegistration.DoctorMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap/css/custom.css" />
+    <script src="../bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="bluenav">
+            <div class="container">
+     
+                    <ul class="menu">
+                        <li><asp:LinkButton Text="<span class='glyphicon glyphicon-home'></span>" ID="lnkHome" runat="server" OnClick="lnkHome_Click"/></li>
+                        <li><asp:LinkButton Text="View Profile" ID="lnkViewProfile" runat="server" OnClick="lnkViewProfile_Click" /></li>
+                        <li><asp:LinkButton Text="Logout" ID="lnkLogout" runat="server" OnClick="lnkLogout_Click" /></li>
+                    </ul>
+       
+            </div>
+        </nav>
+
+
+        <div class="container contentarea">
+            <asp:ContentPlaceHolder ID="cph_DoctorMasterPage" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>

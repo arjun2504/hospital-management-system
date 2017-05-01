@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="CaseStudy_InPatientRegistration.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap/css/custom.css" />
+    <script src="../bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+    <form id="form1" runat="server">
+
+        <nav class="bluenav">
+            <div class="container">
+     
+                    <ul class="menu">
+                        <li><asp:LinkButton Text="Home" id="lnkbtnHome" runat="server" OnClick="lnkbtnHome_Click" /></li>
+                        <li><asp:LinkButton Text="About" id="lnkbtnAbout" runat="server" OnClick="lnkbtnAbout_Click"/></li>
+                        <li><asp:LinkButton Text="Contact" id="lnkbtnContact" runat="server" OnClick="lnkbtnContact_Click" /></li>
+                    </ul>
+       
+            </div>
+        </nav>
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="cph_MasterPage" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+    </body>
+</html>

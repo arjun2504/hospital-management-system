@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="CaseStudy_InPatientRegistration.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="../bootstrap/css/custom.css" />
+</head>
+<body class="body">
+    <form id="form2" runat="server">
+    <nav>
+        <div class="container">
+     
+                <ul class="menu">
+                    <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="lnkbtnHome_Click">Home</asp:LinkButton></li>
+                    <li><asp:LinkButton Text="View All Doctor Profile" runat="server" OnClick="Unnamed1_Click" /></li>
+                    <li><asp:LinkButton Text="Add Doctor" ID="lnkbtnAddDoctor" runat="server" OnClick="lnkbtnAddDoctor_Click" /></li>
+                    <li><asp:LinkButton Text="Delete Doctor" ID="lnkbtnDeleteDoctor" runat="server" OnClick="lnkbtnDeleteDoctor_Click" /></li>
+                    <li><asp:LinkButton Text="Change Password" ID="lnkbtnChangePassword" runat="server" OnClick="lnkbtnChangePassword_Click" /></li>
+                    <li><asp:LinkButton Text="Log Out" ID="lnkbtnLogOut" runat="server" OnClick="lnkbtnLogOut_Click" /></li>
+                </ul>
+       
+        </div>
+    </nav>
+
+    <div class="container contentarea">
+        <asp:ContentPlaceHolder ID="cphAdmin" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

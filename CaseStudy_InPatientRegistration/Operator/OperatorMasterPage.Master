@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OperatorMasterPage.master.cs" Inherits="CaseStudy_InPatientRegistration.OperatorMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap/css/custom.css" />
+    <script src="../bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+        <nav class="rednav">
+            <div class="container">
+                <ul class="menu">
+                    <li><asp:linkbutton text="<span class='glyphicon glyphicon-home'></span> Home" ID="lnkHome" runat="server" OnClick="lnkHome_Click" /></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <br /><br />
+
+            <div class="col-md-3">
+                <ul class="list-group">
+                  <asp:linkbutton text="Accomodation" ID="lnkAccomodation" runat="server" OnClick="lnkAccomodation_Click" CssClass="list-group-item" />
+                  <asp:linkbutton text="Bill Generation" ID="lnkBillGeneration" runat="server" OnClick="lnkBillGeneration_Click" CssClass="list-group-item" />
+                  <asp:linkbutton text="ViewAllPatient" ID="lnkViewAllPatient" runat="server" OnClick="lnkViewAllPatient_Click" CssClass="list-group-item" />
+                  <asp:linkbutton text="ViewOnePatient" ID="ViewOnePatient" runat="server" OnClick="ViewOnePatient_Click" CssClass="list-group-item" />
+                  <asp:LinkButton Text="ChangePassword" ID="lnkChangePassword" runat="server" OnClick="lnkChangePassword_Click"  CssClass="list-group-item" />
+                  <asp:LinkButton Text="Logout" ID="lnkLogout" runat="server" OnClick="lnkLogout_Click" CssClass="list-group-item" /></li>
+                </ul>
+            </div>
+
+            <div class="col-md-9">
+                <asp:ContentPlaceHolder ID="cph_OperatorMasterPage" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>
